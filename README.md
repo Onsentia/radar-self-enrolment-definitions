@@ -3,68 +3,58 @@ Definition files to define the contents and behaviour of various parts of self e
 
 The definitions are used by the self enrolment portal to render the [UI](https://github.com/RADAR-base/radar-self-enrolment-ui) and validate the user input. The definitions are written in JSON format and are loaded by the portal at runtime.
 
-## Definitions
 
-The definitions are divided into multiple files based on the type of information they define. The definitions are stored in the per-project directories.
+## protocol.json
 
-#### Study Information
 
-The study information definitions define the study information displayed to the user on the portal's study home page. The study information definitions are stored in the `study_info` directory.
+## landingpage.json
 
-#### Eligibility
+This JSON file is a list of 'blocks'. Each block renders a specific type of content on the page, for example a 'hero block', a 'video block', or a 'markdown block'.
+Each block is a key-value map with general block keys and content-specific keys.
 
-The eligibility definitions define the eligibility criteria that the user must meet to be able to participate in the study. The eligibility definitions are stored in the `eligibility` directory.
+All blocks have the following parameters:
 
-#### Consent
+| Param     | required | value | description |
+|-----------|----------|---------|-----------|
+| blockType | required | ("markdown", "text", "hero", or "video") | The type of block |
+| noCard    | optional | boolean | Whether to render the content in a card |
+| blockPadding | optional | number | The padding around the contents of the block |
+| blockBackground | optional | string | The background colour behind the block (Not the card) |
+| title | optional | string | The title heading to display |
+| subtitle | optional | string | The subtitle of the block |
 
-The consent definitions define mandatory and optional consent questions that the user must agree to before participating in the study. The consent definitions are stored in the `consent` directory.
+### Text block
+A simple block to display plain text
 
+| Param     | required | value   | description |
+|-----------|----------|---------|-------------|
+| content   | required | string  | The string to display in the block
+
+### Markdown block
+A block which will display markdown and HTML content while keeping the study CSS/material theme
+
+| Param     | required | value   | description |
+|-----------|----------|---------|-------------|
+| content   | required | string  | A string containing markdown/html content |
+
+### Hero block
+A 'hero' banner with up to two call to action buttons
+
+| Param     | required | value   | description |
+|-----------|----------|---------|-------------|
+| heroImage | true | {src: string, altText: string} | An object containing the image src path and an alt string to display |
+| cta | optional | {text: string, href: string} | The call-to-action button text and link |
+| cta2 | optional | {text: string, href: string} | A second call-to-action button |
+
+### Video block
+A block to display a video in the `<video>` tag
+
+
+| Param     | required | value   | description |
+|-----------|----------|---------|-------------|
+| video     | required | {src: string, type: string, params: {}} | The source, video type (e.g. "video/mp4"), and parameters to include (e.g. autoPlay, muted) |
 
 ## Scripts
 
 The `scripts` directory contains scripts to pull definitions from external systems such as REDCap or local CSV files.
 
-#### REDCap
-
-The `/scripts/redcap/main.py` script pulls the study information, eligibility and consent definitions from a REDCap project.
-
-Copy the `config.py.template` file to `config.py` and update the configuration values.
-
-The script will update values in `{}` in the config value for project, form_name and version.
-For example, `GITHUB_BRANCH="{project}"` will be updated to `GITHUB_BRANCH="REDCAP_PROJECT_NAME"` dynamically based on the name of the REDCap project.
-
-The script requires the following configuration values:
-
-```python
-    REDCAP_PROJECT="" # REDCap project ID
-    REDCAP_TOKEN="" # REDCap API token
-    REDCAP_API_URL="" # URL to the REDCap API
-    REDCAP_FIELDS=[] # List of fields to pull from REDCap. If empty, all fields will be pulled.
-
-    GITHUB_TOKEN="" # GitHub API token
-    GITHUB_OWNER="RADAR-base" # GitHub owner
-    GITHUB_REPO="radar-self-enrolment-definitions" # GitHub repository
-    GITHUB_BRANCH="{project}" # GitHub branch
-    GITHUB_COMMIT_MESSAGE="Updated content from redcap project {project}" # Commit message
-
-    VERSION="v1" # Version of the sync
-    STUDY_INFO_FORM="sep_study_info" # Name of the form in REDCap that contains the study information
-    CONSENT_FORM="sep_consent"     # Name of the form in REDCap that contains the consent information
-    ELIGIBILITY_FORM="sep_eligibility" # Name of the form in REDCap that contains the eligibility information
-```
-
-Install the required packages using the following command:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the script using the following command:
-
-```bash
-python main.py
-```
-
-Select the prompts to achieve the desired outcome.
-
-The script will pull the definitions from the REDCap project and store them in the respective directories.
