@@ -40,7 +40,7 @@
               },
               "block2": {
                 "blockType": "markdown",
-                "content": "![Connect your device](/kratos-ui/study/paprka/resources/connect_your_device.jpg \"Connect\")"
+                "content": "![Connect your device](https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/paprka/resources/connect_your_device.jpg \"Connect\")"
               }
             }
           },
@@ -56,11 +56,11 @@
             "noCard": true,
             "title": "Meet the team",
             "items": [
-              {"imgSrc": "/study/paprka/resources/profiles_will_dixon.png", "title": "Will Dixon", "content": "Professor of Digital Epidemiology"},
-              {"imgSrc": "/study/paprka/resources/profiles_ayo.png", "title": "Ayobami Esther Olanrewaju", "content": "PhD candidate in Musculoskeletal"},
-              {"imgSrc": "/study/paprka/resources/profiles_sabine.png", "title": "Sabine Van der veer", "content": "Senior Lecturer in Health Informatics"},
-              {"imgSrc": "/study/paprka/resources/profiles_david_wong.png", "title": "David Wong", "content": "A/Prof Health Informatics and Health Data Science"},
-              {"imgSrc": "/study/paprka/resources/profiles_shuai.png", "title": "Shuai Shao", "content": "Research Associate"}
+              {"imgSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/paprka/resources/profiles_will_dixon.png", "title": "Will Dixon", "content": "Professor of Digital Epidemiology"},
+              {"imgSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/paprka/resources/profiles_ayo.png", "title": "Ayobami Esther Olanrewaju", "content": "PhD candidate in Musculoskeletal"},
+              {"imgSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/paprka/resources/profiles_sabine.png", "title": "Sabine Van der veer", "content": "Senior Lecturer in Health Informatics"},
+              {"imgSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/paprka/resources/profiles_david_wong.png", "title": "David Wong", "content": "A/Prof Health Informatics and Health Data Science"},
+              {"imgSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/paprka/resources/profiles_shuai.png", "title": "Shuai Shao", "content": "Research Associate"}
             ]
           },
           {

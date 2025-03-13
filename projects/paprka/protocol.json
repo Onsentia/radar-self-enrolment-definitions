@@ -17,7 +17,7 @@
         "description": "Tell us when you had your knee replacement surgery.",
         "optional": false,
         "type": "redcap_local",
-        "path": "/public/study/paprka/resources/paprka_surgery.json"
+        "path": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/paprka/resources/paprka_surgery.json"
       }
     },
     {
@@ -30,7 +30,7 @@
         "description": "Your unique, 10 digit, NHS identifier.",
         "optional": false,
         "type": "redcap_local",
-        "path": "/public/study/paprka/resources/paprka_nhs.json"
+        "path": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/paprka/resources/paprka_nhs.json"
       }
     },
     {
@@ -64,7 +64,7 @@
         "description": "Help us make this process easier for others.",
         "optional": true,
         "type": "redcap_local",
-        "path": "/public/study/paprka/resources/paprka_feedback.json"
+        "path": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/paprka/resources/paprka_feedback.json"
       }
     }
   ],
@@ -344,7 +344,7 @@
         }
       }
     },
-    "faviconSrc": "/study/paprka/resources/hrfh_low.png",
+    "faviconSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/paprka/resources/hrfh_low.png",
     "navbar": {
       "links": [
         {
@@ -356,7 +356,7 @@
           "href": "/paprka/about"
         }
       ],
-      "logoSrc": "/study/paprka/resources/hrfh_landscape_text.jpg"
+      "logoSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/paprka/resources/hrfh_landscape_text.jpg"
     },
     "footer": {
       "columns": [
