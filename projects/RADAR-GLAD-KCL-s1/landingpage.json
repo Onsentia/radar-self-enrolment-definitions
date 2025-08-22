@@ -1,0 +1,20 @@
+{
+  "blocks": [
+        {
+          "blockType": "column",
+          "noCard": true,
+          "blockBackground": "white",
+          "title": "",
+          "content": {
+            "block1": {
+              "blockType": "markdown",
+              "content": "#GLAD Study: Join the world's largest ever study of anxiety & depression.<br/><br/>\n<button variant='contained' href='RADAR-GLAD-KCL-s1/enrol'>Join Study</button>"
+            },
+            "block2": {
+              "blockType": "markdown",
+              "content": ""
+            }
+          }
+        }
+  ]
+}
