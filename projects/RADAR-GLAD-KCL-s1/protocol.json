@@ -100,7 +100,7 @@
         },
         "primary": {
           "light": "#E8C208",
-          "main": "#FFD100",
+          "main": "#E8C208",
           "dark": "#CCAA00",
           "contrastText": "#000000"
         },
