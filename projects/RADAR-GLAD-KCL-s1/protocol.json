@@ -99,8 +99,8 @@
           "default": "#ffffff"
         },
         "primary": {
-          "light": "#E8C208",
-          "main": "#E8C208",
+          "light": "#FFE566",
+          "main": "#ECC303",
           "dark": "#CCAA00",
           "contrastText": "#000000"
         },
