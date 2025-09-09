@@ -20,7 +20,8 @@
               "controls": true,
               "muted": false,
               "autoPlay": false,
-              "playsInline": true
+              "playsInline": true,
+              "poster": "https://study-management.ams3.cdn.digitaloceanspaces.com/glad/home-page/video-placeholder-4.jpg"
             }
           }
         }
