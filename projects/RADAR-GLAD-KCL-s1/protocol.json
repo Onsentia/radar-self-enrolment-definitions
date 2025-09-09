@@ -70,7 +70,7 @@
         {
           "fieldType": "yesno",
           "id": "criteria3",
-          "description": "Have you never experienced any mental health disorder (with or without a medical diagnosis) or any mental health disorder?"
+          "description": "Have you ever experienced anxiety or depressive disorders (with or without a medical diagnosis) or have never experienced any mental health disorder?"
         }
       ]
     },
