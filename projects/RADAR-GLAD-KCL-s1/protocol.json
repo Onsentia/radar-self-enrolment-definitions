@@ -53,6 +53,38 @@
     }
   ],
   "enrolment": {
+    "eligibility": {
+      "title": "Who Can Take Part",
+      "description": "We can only accept people onto our study if they answer Yes to the following questions.",
+      "items": [
+        {
+          "fieldType": "yesno",
+          "id": "criteria1",
+          "description": "Are you over 16 years of age?"
+        },
+        {
+          "fieldType": "yesno",
+          "id": "criteria2",
+          "description": "Do you live in the United Kingdom?"
+        },
+        {
+          "fieldType": "yesno",
+          "id": "criteria3",
+          "description": "Have you never experienced any mental health disorder (with or without a medical diagnosis) or any mental health disorder?"
+        }
+      ]
+    },
+    "consent": {
+      "title": "Consent",
+      "description": "Before you can take part in this study, we need your consent.",
+      "requiredItems": [
+        {
+          "fieldType": "yesno",
+          "id": "required1",
+          "description": "I consent to take part in the Genetic Links to Anxiety and Depression (GLAD) Study.\n"
+        }
+      ]
+    },
     "account": {
       "title": "Register Account",
       "description": "You need an account to give us your information and connect your fitness tracker or smartphone app.\nYou can find out more information about the way we use personal information, and the rights individuals have to control and manage their data in our [privacy policy](https://documents.manchester.ac.uk/display.aspx?DocID=37095)\n"
