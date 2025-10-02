@@ -63,6 +63,13 @@
             "title": "Talk to us",
             "blockBackground": "white",
             "content": "Email us: **sleepstudy@kcl.ac.uk**\n<br /><br />\nOffice hours: Monday to Friday, 9:00am to 5:00pm (UK time)."
+        },
+        {
+            "blockType": "markdown",
+            "noCard": true,
+            "title": "",
+            "blockBackground": "white",
+            "content": "<img src='/study/SSHH-KCL/resources/kcl-logo.png' alt='KCL logo' style='width:72px; display:block; margin:16px auto 8px; opacity:0.95;' />"
         }
     ]
 }
