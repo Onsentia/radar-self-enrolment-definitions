@@ -107,7 +107,7 @@
         "materialTheme": {
             "typography": {
                 "allVariants": {
-                    "fontFamily": "Georgia, 'Times New Roman', serif",
+                    "fontFamily": "var(--font-montserrat)",
                     "wordBreak": "break-word",
                     "whiteSpace": "pre-wrap"
                 },
