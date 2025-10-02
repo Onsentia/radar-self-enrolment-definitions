@@ -1,0 +1,277 @@
+{
+    "name": "Sleep Hygiene Study",
+    "studyId": "SSHH-KCL",
+    "healthIssues": [],
+    "onboarding": {
+        "metadata": {},
+        "steps": []
+    },
+    "protocols": [
+        {
+            "id": "connect",
+            "appearance": {},
+            "schedule": {},
+            "metadata": {
+                "title": "Connect Devices",
+                "order": 2,
+                "description": "Optionally connect your wearable or smartphone health apps to share relevant sleep and activity data.",
+                "optional": true,
+                "type": "inbuilt",
+                "inbuiltId": "connect",
+                "options": {
+                    "title": "TASK: Connect my device(s)",
+                    "description": "Click on the connect button for your device.",
+                    "devices": [
+                        {
+                            "id": "fitbit",
+                            "title": "Fitbit"
+                        },
+                        {
+                            "id": "garmin",
+                            "title": "Garmin"
+                        },
+                        {
+                            "id": "oura",
+                            "title": "Oura Ring"
+                        },
+                        {
+                            "id": "apple_health",
+                            "title": "Apple Health"
+                        },
+                        {
+                            "id": "radar_prmt",
+                            "title": "RADAR pRMT"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "enrolment": {
+        "eligibility": {
+            "title": "Who Can Take Part",
+            "description": "We can only accept people onto our study if they answer Yes to the following questions.",
+            "items": [
+                {
+                    "fieldType": "yesno",
+                    "id": "criteria1",
+                    "description": "Are you over 16 years of age?"
+                },
+                {
+                    "fieldType": "yesno",
+                    "id": "criteria2",
+                    "description": "Do you live in the United Kingdom?"
+                }
+            ]
+        },
+        "consent": {
+            "title": "Consent",
+            "description": "Before you can take part in this study, we need your consent to complete questionnaires about your sleep habits and (optionally) share data from your wearable devices or smartphone apps.",
+            "requiredItems": [
+                {
+                    "fieldType": "yesno",
+                    "id": "required1",
+                    "description": "I confirm that I have read the attached information sheet for the Sleep Hygiene Study and have had the opportunity to consider the information and ask questions and had these answered satisfactorily."
+                },
+                {
+                    "fieldType": "yesno",
+                    "id": "required2",
+                    "description": "I understand that my participation in the study is voluntary and that I am free to withdraw at any time without giving a reason and without detriment to myself."
+                },
+                {
+                    "fieldType": "yesno",
+                    "id": "required3",
+                    "description": "I give permission for the study team to access and analyse my questionnaire responses about my sleep habits and related lifestyle factors."
+                }
+            ],
+            "optionalItems": [
+                {
+                    "fieldType": "yesno",
+                    "id": "optional1",
+                    "description": "I give permission for the study team to access and collect data from my wearable devices or smartphone apps related to sleep, activity, and heart rate."
+                },
+                {
+                    "fieldType": "yesno",
+                    "id": "optional2",
+                    "description": "I agree that the researchers may contact me in future about other research projects that I might be eligible for."
+                }
+            ],
+            "signatureDescription": "By signing this consent form, I declare that I have provided accurate identity details (full name and electronic signature)."
+        },
+        "account": {
+            "title": "Register Account",
+            "description": "You need an account to give us your information and (optionally) connect your wearable or smartphone app."
+        }
+    },
+    "studyUiConfig": {
+        "materialTheme": {
+            "typography": {
+                "allVariants": {
+                    "fontFamily": "Georgia, 'Times New Roman', serif",
+                    "wordBreak": "break-word",
+                    "whiteSpace": "pre-wrap"
+                },
+                "h1": {
+                    "fontSize": "2rem",
+                    "fontWeight": "700",
+                    "color": "#0E1B4D",
+                    "wordBreak": "normal",
+                    "overflow": "hidden"
+                },
+                "h2": {
+                    "fontSize": "1.5rem",
+                    "fontWeight": "700",
+                    "color": "#0E1B4D"
+                },
+                "h3": {
+                    "fontSize": "1rem",
+                    "fontWeight": "700",
+                    "color": "#334155"
+                },
+                "h4": {
+                    "fontSize": "1rem",
+                    "fontWeight": "600"
+                },
+                "button": {
+                    "textTransform": "none",
+                    "wordBreak": "normal"
+                },
+                "body1": {},
+                "body2": {}
+            },
+            "palette": {
+                "background": {
+                    "default": "#ffffff"
+                },
+                "primary": {
+                    "light": "#253168",
+                    "main": "#0E1B4D",
+                    "dark": "#080F2E",
+                    "contrastText": "#ffffff"
+                },
+                "secondary": {
+                    "light": "#D6BCFA",
+                    "main": "#A78BFA",
+                    "dark": "#6D28D9",
+                    "contrastText": "#1F2937"
+                },
+                "success": {
+                    "main": "#02a765"
+                },
+                "warning": {
+                    "main": "#e4700c"
+                },
+                "error": {
+                    "main": "#d4311d"
+                }
+            },
+            "components": {
+                "MuiButton": {
+                    "defaultProps": {
+                        "disableElevation": true,
+                        "sx": {
+                            "borderRadius": 3
+                        }
+                    }
+                },
+                "MuiAppBar": {
+                    "defaultProps": {
+                        "elevation": 0,
+                        "position": "static"
+                    }
+                },
+                "MuiToggleButton": {
+                    "styleOverrides": {
+                        "root": {
+                            "borderRadius": 32,
+                            "fontSize": "1em"
+                        }
+                    }
+                },
+                "MuiTextField": {
+                    "defaultProps": {
+                        "variant": "standard"
+                    }
+                },
+                "MuiInputLabel": {
+                    "styleOverrides": {
+                        "standard": {
+                            "fontSize": "1rem"
+                        },
+                        "shrink": {
+                            "fontSize": "1rem",
+                            "fontWeight": "700",
+                            "transform": "translate(0, -10px)"
+                        }
+                    }
+                }
+            }
+        },
+        "faviconSrc": "",
+        "navbar": {
+            "links": [
+                {
+                    "text": "Home",
+                    "href": "/SSHH-KCL"
+                }
+            ],
+            "logoSrc": ""
+        },
+        "footer": {
+            "columns": [
+                {
+                    "title": "Study Links",
+                    "items": [
+                        {
+                            "text": "Home",
+                            "href": "#"
+                        },
+                        {
+                            "text": "About the study",
+                            "href": "#"
+                        }
+                    ]
+                },
+                {
+                    "title": "Contact Us",
+                    "items": [
+                        {
+                            "text": "sleepstudy@kcl.ac.uk",
+                            "href": "mailto:sleepstudy@kcl.ac.uk"
+                        }
+                    ]
+                },
+                {
+                    "title": "Legal Links",
+                    "items": [
+                        {
+                            "text": "Privacy Policy",
+                            "href": "privacy"
+                        },
+                        {
+                            "text": "Cookie Policy",
+                            "href": "cookies"
+                        }
+                    ]
+                }
+            ],
+            "copyrightText": "© 2024 King's College London"
+        },
+        "portal": {
+            "title": "Complete Tasks to Join Study"
+        },
+        "analytics": {
+            "gaId": ""
+        },
+        "faviconSrc": "https://raw.githubusercontent.com/twitter/twemoji/master/assets/72x72/1f319.png",
+        "navbar": {
+            "links": [
+                {
+                    "text": "Home",
+                    "href": "/SSHH-KCL"
+                }
+            ],
+            "logoSrc": "https://raw.githubusercontent.com/twitter/twemoji/master/assets/72x72/1f319.png"
+        }
+    }
+}
