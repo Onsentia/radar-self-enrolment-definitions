@@ -69,7 +69,7 @@
             "noCard": true,
             "title": "",
             "blockBackground": "white",
-            "content": "<img src='/study/SSHH-KCL/resources/kcl-logo.png' alt='KCL logo' style='width:72px; display:block; margin:16px auto 8px; opacity:0.95;' />"
+            "content": "<img src='https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/SSHH-KCL/resources/kcl-logo.png' alt='KCL logo' style='width:72px; display:block; margin:16px auto 8px; opacity:0.95;' />"
         }
     ]
 }
