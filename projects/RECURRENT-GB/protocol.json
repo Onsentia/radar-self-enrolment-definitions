@@ -104,19 +104,19 @@
                 "h1": {
                     "fontSize": "2rem",
                     "fontWeight": "700",
-                    "color": "#003865",
+                    "color": "#000000",
                     "wordBreak": "normal",
                     "overflow": "hidden"
                 },
                 "h2": {
                     "fontSize": "1.5rem",
                     "fontWeight": "700",
-                    "color": "#003865"
+                    "color": "#000000"
                 },
                 "h3": {
                     "fontSize": "1rem",
                     "fontWeight": "700",
-                    "color": "#444"
+                    "color": "#000000"
                 },
                 "h4": {
                     "fontSize": "1rem",
@@ -134,25 +134,25 @@
                     "default": "#ffffff"
                 },
                 "primary": {
-                    "light": "#FFE566",
-                    "main": "#ECC303",
-                    "dark": "#CCAA00",
-                    "contrastText": "#000000"
+                    "light": "#000000",
+                    "main": "#000000",
+                    "dark": "#000000",
+                    "contrastText": "#ffffff"
                 },
                 "secondary": {
-                    "light": "#4F86C6",
-                    "main": "#1D4F91",
-                    "dark": "#123764",
+                    "light": "#000000",
+                    "main": "#000000",
+                    "dark": "#000000",
                     "contrastText": "#ffffff"
                 },
                 "success": {
-                    "main": "#02a765"
+                    "main": "#000000"
                 },
                 "warning": {
-                    "main": "#e4700c"
+                    "main": "#000000"
                 },
                 "error": {
-                    "main": "#d4311d"
+                    "main": "#000000"
                 }
             },
             "components": {
@@ -197,7 +197,7 @@
                 }
             }
         },
-        "faviconSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/RECURRENT-GB/resources/icon.png",
+        "faviconSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/RADAR-mCRAVING-KCL-s1/resources/icon.png",
         "navbar": {
             "links": [
                 {
@@ -205,7 +205,7 @@
                     "href": "/RECURRENT-GB"
                 }
             ],
-            "logoSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/RECURRENT-GB/resources/icon.png"
+            "logoSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/RADAR-mCRAVING-KCL-s1/resources/icon.png"
         },
         "footer": {
             "columns": [
