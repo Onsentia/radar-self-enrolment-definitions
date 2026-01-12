@@ -35,14 +35,14 @@
       "content": {
         "block1": {
           "blockType": "markdown",
+          "content": "![GLAD Wearable Data Study](http://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/RADAR-GLAD-KCL-s1/resources/image.jpg)"
+        },
+        "block2": {
+          "blockType": "markdown",
           "noCard": true,
           "title": "Who Can Take Part?",
           "blockBackground": "white",
           "content": "To take part in the GLAD Wearable Data Study you must:\n- Be part of the existing GLAD Study\n<br />\nAND you must:\n- Be aged 16 or over\n- Live in the United Kingdom.\n- Be willing to connect a wearable or health app so we can collect activity, sleep, and related metrics alongside your questionnaire responses.\n<br />\nYou can withdraw from the study at any time."
-        },
-        "block2": {
-          "blockType": "markdown",
-          "content": "![GLAD Wearable Data Study](http://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/RADAR-GLAD-KCL-s1/resources/image.jpg)"
         }
       }
     },
