@@ -1,6 +1,6 @@
 {
-    "name": "Sleep Hygiene Study",
-    "studyId": "SSHH-KCL",
+    "name": "Staging Project",
+    "studyId": "STAGING_PROJECT",
     "healthIssues": [],
     "onboarding": {
         "metadata": {},
@@ -257,7 +257,7 @@
             "links": [
                 {
                     "text": "Home",
-                    "href": "/SSHH-KCL"
+                    "href": "/STAGING_PROJECT"
                 }
             ],
             "logoSrc": "https://raw.githubusercontent.com/twitter/twemoji/master/assets/72x72/1f319.png"
