@@ -1,0 +1,29 @@
+{
+    "enrolment": {
+        "eligibility": {
+            "title": "Who Can Take Part",
+            "description": "We can only accept people onto our study if they answer Yes to the following question.",
+            "items": [
+                {
+                    "id": "age",
+                    "description": "Are you over 18 years of age?",
+                    "fieldType": "yesno"
+                }
+            ]
+        },
+        "consent": {
+            "title": "Consent",
+            "description": "Please review and agree to the following consent item.",
+            "requiredItems": [
+                {
+                    "id": "participate",
+                    "description": "I agree to participate in this study.",
+                    "fieldType": "yesno"
+                }
+            ],
+            "optionalItems": [
+            ],
+            "signatureDescription": "Signature and data protection statement."
+        }
+    }
+}
