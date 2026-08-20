@@ -1,6 +1,6 @@
 {
-    "name": "mCRAVING",
-    "studyId": "RADAR-mCRAVING-KCL-s1",
+    "name": "RECURRENT-GB",
+    "studyId": "RECURRENT-GB",
     "healthIssues": [
     ],
     "onboarding": {
@@ -25,7 +25,17 @@
                 "inbuiltId": "connect",
                 "options": {
                     "devices": [
-                        "radar_armt"
+                        {
+                            "id": "radar_armt",
+                            "title": "RADAR aRMT App",
+                            "description": "Download the RADAR aRMT app on your Android or iOS smartphone and log in to share your questionnaire and device data with us."
+                        },
+                        {
+                            "id": "google_health",
+                            "title": "Google Health",
+                            "description": "Connect your Google Health account to share your fitness and health data with us.",
+                            "enabled": false
+                        }
                     ]
                 }
             }
@@ -65,15 +75,15 @@
     "studyUiConfig": {
         "materialTheme": {
         },
-        "faviconSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/RADAR-mCRAVING-KCL-s1/resources/icon.png",
+        "faviconSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/RECURRENT-GB/resources/icon.png",
         "navbar": {
             "links": [
                 {
                     "text": "Home",
-                    "href": "/RADAR-mCRAVING-KCL-s1"
+                    "href": "/RECURRENT-GB"
                 }
             ],
-            "logoSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/RADAR-mCRAVING-KCL-s1/resources/icon.png"
+            "logoSrc": "https://raw.githubusercontent.com/RADAR-base/radar-self-enrolment-definitions/refs/heads/main/projects/RECURRENT-GB/resources/icon.png"
         },
         "footer": {
             "columns": [
